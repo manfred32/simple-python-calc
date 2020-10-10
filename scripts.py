@@ -12,4 +12,12 @@ def fizzbuzz(number):
     return str(number)
 
 
-print(fizzbuzz(21))
+def profit(product):
+    return product["inventory"] * product["sell_price"] - product["inventory"] * product["cost_price"]
+
+
+print(profit({
+    "cost_price": 32.67,
+    "sell_price": 45.00,
+    "inventory": 1200
+}))
